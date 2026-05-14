@@ -1,0 +1,19 @@
+#!/bin/bash
+case "$1" in
+  install)
+    NAME="$2"
+    if [[ $3 == mullvad-exclude ]]; then
+      PREFIX='mullvad-exclude '
+      shift 1
+    fi
+    cd ~/bin/"$3"
+    . install.sh "$NAME" "$PREFIX" "${@:4}"
+    ;;
+  list)
+    ls ~/.local/share/ice/profiles
+    ;;
+  remove)
+    rm ~/.local/share/applications/"WebApp-$2.desktop"
+    rm -rf ~/.local/share/ice/profiles/"$2"
+    ;;
+esac

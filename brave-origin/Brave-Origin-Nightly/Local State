@@ -1,0 +1,17 @@
+{
+  "brave": {
+    "origin": {
+      "free_tier_accepted": true
+    },
+    "allow_element_blocker_in_private_mode": true,
+    "stats": {
+      "reporting_enabled": false
+    },
+    "onboarding": {
+      "last_shields_icon_highlighted_time": "99999999999999999"
+    }
+  },
+  "dns_over_https": {
+    "mode": "off"
+  }
+}
