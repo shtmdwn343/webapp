@@ -1,5 +1,5 @@
 #!/bin/bash
-rsync -r profile/ ~/.local/share/ice/profiles/"$1"
+rsync -r --mkpath profile/ ~/.local/share/ice/profiles/"$1"
 PROFILE="$_"
 
 if [[ $4 != -private ]]; then
