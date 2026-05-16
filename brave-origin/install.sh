@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo cp initial_preferences /opt/brave.com/brave-origin-nightly
-rsync -r Brave-Origin-Nightly/ ~/.local/share/ice/profiles/"$1"
+rsync -r --mkpath Brave-Origin-Nightly/ ~/.local/share/ice/profiles/"$1"
 
 cat << EOF > ~/.local/share/applications/"WebApp-$1.desktop"
 [Desktop Entry]
