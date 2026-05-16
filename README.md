@@ -14,6 +14,8 @@ Linux Mint webapp-manager와 호환되는 웹 앱을 생성합니다.
 
 chmod +x reinstall webapp
 
+~/.local/share/ice/icons 폴더에 아이콘 파일을 넣습니다.
+
 <br>
 
 # 사용 예시
